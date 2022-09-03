@@ -1,0 +1,42 @@
+@import '../../default-scss/variables';
+@import '../../default-scss/mixins';
+
+
+.paging {
+    margin-left: auto;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    color: $gray66;
+    &_inner {
+         box-shadow: $shadow;
+         display: flex;
+         align-items: center;
+         border-radius: 4px;
+    }
+    .icon_left,
+    .icon_right {
+         padding: 10px 13px;
+         font-size: 120%;
+         color: inherit;
+         border: none;
+         background: transparent;
+         @include animStyle(color 0.3s);
+         &.inactive,
+         &:disabled {
+              color: $inactive;
+              cursor: default;
+              pointer-events: none;
+         }
+         &:not(.inactive):hover {
+              color: $siteColor;
+         }
+         &:before {
+              display: block;
+         }
+    }
+    .pages_info {
+         font-size: 140%;
+         line-height: 22px;
+         padding: 0 5px;
+    }
+}

@@ -1,0 +1,25 @@
+@import '../../default-scss/variables';
+
+.header {
+    box-shadow: 0 2px 20px rgba($grayE2,0.5);
+    padding: 29px 0 24px;
+    &_inner {
+        max-width: 1025px;
+        padding: 0 30px;
+        margin: 0 auto;
+    }
+    .logo img {
+        display: block;
+        width: auto;
+        height: 27px;
+    }
+    @media #{$until575} {
+        padding: 20px 0;
+        &_inner {
+            padding: 0 15px;
+        }
+        .logo img {
+            height: 24px;
+        }
+    }
+}

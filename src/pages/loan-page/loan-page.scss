@@ -1,0 +1,105 @@
+@import '../../default-scss/variables';
+@import '../../default-scss/mixins';
+
+.data_group {
+    max-width: 400px;
+    margin: 0 auto;
+    .section_title {
+        position: relative;
+        margin-bottom: 30px !important;
+        padding-right: 0 !important;
+        &:after {
+            display: block;
+            content: "";
+            margin-top: 10px;
+            border-bottom: 1px solid rgba($gray97,0.2);
+        }
+        &:before {
+            position: absolute;
+            left: -34px;
+            top: 3px;
+            color: $blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            background: rgba($blue,0.1);
+            border-radius: 3px;
+            font-size: 1.6rem;
+        }
+    }
+    .user_name {
+        max-width: 400px;
+        margin-bottom: 15px;
+        font-size: 160%;
+        line-height: 1.5em;
+        color: $black;
+    }
+    .data_list {
+        @include standardRowList();
+        font-size: 140%;
+        line-height: 22px;
+        li {
+            padding: 0 $colPadding 30px;
+            &:nth-child(2n+1) {
+                flex: 0 0 155px;
+                max-width: 155px;
+            }
+            &:nth-child(2n) {
+                flex: 1;
+                min-width: 150px;
+            }
+        }
+    }
+    .data_table {
+        font-size: 140%;
+        line-height: 24px;
+        th {
+            font-weight: normal;
+            color: $gray66;
+            padding: 0 0 10px;
+        }
+        td {
+            padding: 0 0 13px;
+            vertical-align: top;
+            &:last-child {
+                white-space: nowrap;
+                padding-left: 20px;
+            }
+        }
+    }
+    .data_type {
+        color: $gray66;
+        margin-bottom: 9px;
+    }
+    .data_result {
+        font-weight: 600;
+        @include overHidden();
+        max-width: 100%;
+    }
+    + .data_group {
+        padding-top: 30px;
+        
+    }
+    @media #{$until575} {
+        .section_title {
+            padding-left: 30px;
+            &:before {
+                left: 0;
+                width: 20px;
+                height: 20px;
+                font-size: 1.4rem;
+            }
+            &:after{
+                margin-left: -30px;
+            }
+        }
+    }
+    @media #{$until479} {
+        .data_list li {
+            flex: 0 0 100% !important;
+            max-width: 100% !important;
+        }
+    }
+}

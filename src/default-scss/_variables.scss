@@ -1,0 +1,72 @@
+//font families
+$regular: "regular", "regular2";
+$bold: "bold", "bold2";
+
+//media query sizes
+$until1440: "(max-width: 1440px)";
+$until1439: "(max-width: 1439px)";
+$until1199: "(max-width: 1199px)";
+$until991: "(max-width: 991px)";
+$until959: "(max-width: 959px)";
+$until768: "(max-width: 768px)";
+$until767: "(max-width: 767px)";
+$until639: "(max-width: 639px)";
+$until599: "(max-width: 599px)";
+$until575: "(max-width: 575px)";
+$until524: "(max-width: 524px)";
+$until479: "(max-width: 479px)";
+$until399: "(max-width: 399px)";
+$until359: "(max-width:359px)";
+$until699h: "(max-height: 699px)";
+$until719h: "(max-height: 719px)";
+$until524h: "(max-height: 524px)";
+$until399h: "(max-height: 399px)";
+$until359h: "(max-height: 359px)";
+
+//colors
+$black: #000000;
+$black0E: #0E0E0E;
+$black33: #333333; 
+$gray66: #616161;
+$gray99: #797979;
+$gray97: #979797;
+$grayE2: #e2e2e2;
+$grayE5: #e5e5e5;
+$white: #ffffff;
+$creamyF2:#f2f2f2;
+$error: #E14A4A;
+$siteColor: #72BF44;
+$inactive: #ACAEB4;
+$hoverColor: #7DD138;
+$fieldBorder: #dddddd;
+$fieldBg: #fafafa;
+$dateOut: #BBBBBB;
+$dateHover: #F6F6F6;
+$dateArrows: #8D8E92;
+$blue: #00A4E1;
+$success: #73C750;
+$warning: #FAAE00;
+$info: #4F96D9;
+$attachColor: #68B92E;
+
+//social icons original color
+$facebookColor: #3b5998;
+$twitterColor: #00acee;
+$youtubeColor: #c4302b;
+$behanceColor: #053eff;
+$linkedinColor: #0e76a8;
+$okColor: #ed812b;
+$pinterestColor: #c8232c;
+$vkColor: #4c75a3;
+$tiktokColor: #EE1D52;
+$telegramColor: #0088cc;
+$instagramColor: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+
+//sizes
+$containerWidth: 560px;
+$containerPadding: 60px;
+$rowMargin: -10px;
+$colPadding: 10px;
+
+//shadow
+$shadow: 0 2px 14px rgba($black0E, 0.06);

@@ -1,0 +1,56 @@
+@import '../../default-scss/variables';
+@import '../../default-scss/mixins';
+
+.content_inner {
+    background-position-y: -65px;
+    @media #{$until575} {
+        background-position-y: -10vw;
+    }
+}
+.message_page {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    text-align: center;
+    &:before {
+        display: block;
+        margin-bottom: 25px;
+        font-size: 900%;
+    }
+    &.icon_success:before {
+        color: $success;
+    }
+    &.icon_info:before {
+        color: $info;
+    }
+    &.icon_warning:before {
+        color: $warning;
+    }
+    &.icon_error:before {
+        color: $error;
+    }
+    .description_block {
+        margin: 32px auto 17px;
+        min-height: 65px;
+        max-width: 374px;
+        font-size: 120%;
+        line-height: 20px;
+        color: $gray99;
+    }
+    .buttons_block {
+        margin-top: 0;
+    }
+    @media #{$until767} {
+        .description_block {
+            min-height: 50px;
+        }
+        &:before {
+            font-size: 720%;
+        }
+    }
+    @media #{$until575} {
+        &:before {
+            font-size: 600%;
+        }
+    }
+}

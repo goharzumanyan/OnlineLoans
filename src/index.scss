@@ -1,0 +1,10 @@
+@import "default-scss/variables";
+@import "default-scss/fonts";
+@import "default-scss/mixins";
+@import "default-scss/general";
+@import "default-scss/extendsStart";
+@import "default-scss/extendsEnd";
+
+iframe {
+  display: none;
+}

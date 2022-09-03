@@ -1,0 +1,71 @@
+@import '../../default-scss/variables';
+@import '../../default-scss/mixins';
+.small_fields {
+    max-width: 320px;
+    margin: 0 auto;
+}
+.send_repeat .repeat_hint,
+.info_block {
+    font-size: 120%;
+    line-height: 19px;
+    letter-spacing: 0.4px;
+    max-width: 280px;
+}
+.info_block {
+    margin-bottom: 20px;
+}
+.send_repeat .repeat_hint {
+    display: inline-block;
+    vertical-align: top;
+}
+.verification_page .section_title {
+    margin-bottom: 35px;
+}
+.input_cells {
+    width: 100% !important;
+    div {
+        display: flex;
+        margin: 0 -10px;
+    }
+    input {
+        flex: 1;
+        margin: 0 10px;
+        outline: none;
+        box-shadow: none;
+        font-size: 160%;
+        line-height: 24px;
+        border: 1px solid $fieldBorder !important;
+        background: $fieldBg;
+        color: $black0E;
+        font-family: $regular;
+        padding: 12px 18px;
+        border-radius: 4px !important;
+        caret-color: $black0E !important;
+        width: 10% !important;
+        height: auto !important;
+        @include animStyle(all 0.3s);
+        &:focus {
+            border-color: $siteColor !important;
+            + input {
+                border-left: 1px solid $fieldBorder !important;
+            }
+        }
+    }
+    @media #{$until575} {
+        input {
+            font-size: 140%;
+            line-height: 22px;
+            padding: 9px 16px;
+        }
+        
+    }
+    @media #{$until479} {
+        div {
+            margin: 0 -5px;
+        }
+        input {
+            margin: 0 5px;
+        }
+        
+    }
+}

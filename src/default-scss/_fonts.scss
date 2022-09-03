@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "regular";
+    font-display: swap;
+    src: url('/fonts/NotoSansArmenian-Regular/NotoSansArmenian-Regular.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/NotoSansArmenian-Regular/NotoSansArmenian-Regular.woff') format('woff'),
+         url('/fonts/NotoSansArmenian-Regular/NotoSansArmenian-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "bold";
+    font-display: swap;
+    src: url('/fonts/NotoSansArmenian-Bold/NotoSansArmenian-Bold.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/NotoSansArmenian-Bold/NotoSansArmenian-Bold.woff') format('woff'),
+         url('/fonts/NotoSansArmenian-Bold/NotoSansArmenian-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "regular2";
+    font-display: swap;
+    src: url('/fonts/NotoSansRegular/NotoSans-Regular.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/NotoSansRegular/NotoSans-Regular.woff') format('woff'),
+         url('/fonts/NotoSansRegular/NotoSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "bold2";
+    font-display: swap;
+    src: url('/fonts/NotoSansBold/NotoSans-Bold.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/NotoSansBold/NotoSans-Bold.woff') format('woff'),
+         url('/fonts/NotoSansBold/NotoSans-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'icon';
+    font-display: 'auto';
+    src: url('/fonts/icons/icomoon.eot?amt1dg');
+    src: url('/fonts/icons/icomoon.eot?amt1dg#iefix') format('embedded-opentype'),
+         url('/fonts/icons/icomoon.ttf?amt1dg') format('truetype'),
+         url('/fonts/icons/icomoon.woff?amt1dg') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class*="icon_"] {
+    @extend %iconElement;
+}
+
+.icon_calendar:before {
+    content: "\e900";
+}
+.icon_coins:before {
+    content: "\e901";
+}
+.icon_user:before {
+    content: "\e906";
+}
+.icon_left:before {
+    content: "\e902";
+}
+.icon_right:before {
+    content: "\e903";
+}
+.icon_close:before {
+    content: "\e904";
+}
+.icon_checked:before {
+    content: "\e905";
+}
+.icon_info:before {
+    content: "\e907";
+}
+.icon_error:before {
+    content: "\e908";
+}
+.icon_success:before {
+    content: "\e909";
+}
+.icon_warning:before {
+    content: "\e910";
+}
+.icon_percent:before {
+    content: "\e911";
+}
+.icon_doc:before {
+    content: "\e912";
+}
+.icon_upload:before {
+    content: "\e913";
+}
+  

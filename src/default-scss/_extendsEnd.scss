@@ -1,0 +1,190 @@
+%opacity300 {
+    @include animStyle(opacity 0.3s);
+}
+
+%color300 {
+    @include animStyle(color 0.3s);
+}
+
+%back300 {
+    @include animStyle(background-color 0.3s);
+}
+
+%all300 {
+    @include animStyle(all 0.3s);
+}
+
+%opacity150 {
+    @include animStyle(opacity 0.15s);
+}
+
+%color150 {
+    @include animStyle(color 0.15s);
+}
+
+%back150 {
+    @include animStyle(background-color 0.15s);
+}
+
+%all150 {
+    @include animStyle(all 0.15s);
+}
+
+%opacityHover07 {
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+%opacityHover1 {
+    &:hover {
+        opacity: 1;
+    }
+}
+
+%blackColorHover {
+    &:hover {
+        color: $black;
+    }
+}
+
+%whiteHover07 {
+    &:hover {
+        color: rgba($white,0.7);
+    }
+}
+
+%whiteColorHover {
+    &:hover {
+        color: $white;
+    }
+}
+
+%siteColorHover {
+    &:hover {
+        color: $siteColor;
+    }
+}
+
+%textUnSelect {
+	-webkit-touch-callout: none; 
+    -webkit-user-select: none;
+     -khtml-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none;
+}
+
+%maskedInput {
+    @include maskedInput();
+}
+
+.web {
+    %socColorHover {
+        a {
+            @extend %color300;
+        }
+        .icon_youtube:hover {
+            color: $youtubeColor;    
+        }
+        .icon_behance:hover {
+            color: $behanceColor;    
+        }
+        .icon_facebook:hover {
+            color: $facebookColor;    
+        }
+        .icon_instagram:hover {
+            background: $instagramColor;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .icon_linkedin:hover {
+            color: $linkedinColor;    
+        }
+        .icon_ok:hover {
+            color: $okColor;    
+        }
+        .icon_pinterest:hover {
+            color: $pinterestColor;    
+        }
+        .icon_twitter:hover {
+            color: $twitterColor;    
+        }
+        .icon_vk:hover {
+            color: $vkColor;    
+        }
+        .icon_tiktok:hover {
+            color: $tiktokColor;    
+        }
+        .icon_telegram:hover {
+            color: $telegramColor;    
+        }
+    }
+}
+
+.touch {
+    %socColorHover {
+        a {
+            @extend %color150;
+        }
+        .icon_youtube:active {
+            color: $youtubeColor;    
+        }
+        .icon_behance:active {
+            color: $behanceColor;    
+        }
+        .icon_facebook:active {
+            color: $facebookColor;    
+        }
+        .icon_instagram:active {
+            background: $instagramColor;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .icon_linkedin:active {
+            color: $linkedinColor;    
+        }
+        .icon_ok:active {
+            color: $okColor;    
+        }
+        .icon_pinterest:active {
+            color: $pinterestColor;    
+        }
+        .icon_twitter:active {
+            color: $twitterColor;    
+        }
+        .icon_vk:active {
+            color: $vkColor;    
+        }
+        .icon_tiktok:active {
+            color: $tiktokColor;    
+        }
+        .icon_telegram:active {
+            color: $telegramColor;    
+        }
+    }
+}
+
+.web {
+    %selectEffects {
+        .bootstrap-select .btn {
+            &:active,
+            &:focus {
+                color: $black33;
+            }
+            &:hover {
+                color: $gray99;
+            }
+        }
+    }
+}
+
+.touch {
+    %selectEffects {
+        .bootstrap-select .btn:active {
+            color: $gray99;
+        }
+    }
+}
